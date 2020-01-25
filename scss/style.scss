@@ -1,3 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+// main selectors
+p{
+    margin: 0;
+}
+
 body{
-    background-color: wheat;
+    padding: 0;
+    margin: 0;
+}
+
+// main selectors
+
+// row nav
+.row-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 10px;
+
+    &:nth-child(1){
+        background-color: wheat;
+    }
+
+    &:nth-child(2){
+        background-color: whitesmoke;
+    }
+
+    &__block{
+        display: flex;
+        flex-direction: row;
+        overflow-x: visible;
+    }
+
+    &__paragraph{
+        padding: 5px 15px;
+        font-family: 'Exo 2', sans-serif;
+        font-size: 20px;
+        letter-spacing: .5px;
+        cursor: pointer;
+
+        &_active{
+            background-color: rgb(81, 255, 0);
+        }
+
+        &:hover{
+            background-color: rgb(81, 255, 0);
+        }
+    }
 }
