@@ -23,3 +23,6 @@ xmlhttp.onreadystatechange = function() {
     }
 };
 
+// высота main от nav
+document.querySelector('main').style.height = (document.documentElement.clientHeight - document.querySelector('header').clientHeight) + 'px';
+

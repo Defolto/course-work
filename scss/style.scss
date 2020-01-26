@@ -25,6 +25,7 @@ body{
 
     &:nth-child(2){
         background-color: whitesmoke;
+        box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .75);
     }
 
     &__block{
@@ -46,6 +47,78 @@ body{
 
         &:hover{
             background-color: rgb(81, 255, 0);
+        }
+    }
+}
+
+// main section
+
+main{
+    position: relative;
+    width: 100%;
+    background-color: wheat;
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, .75);
+
+    .options{
+        position: absolute;
+        top: 15px;
+        left: 15px;
+        box-sizing: border-box;
+        min-width: 350px;
+        padding: 12px 15px;
+        background-color: white;
+        box-shadow: 0 0 3px 0 rgba(0, 0, 0, .75);
+
+        &__title{
+            margin: 0;
+            font-family: 'Exo 2', sans-serif;
+            font-size: 22px;
+        }
+
+        &__labels{
+            margin-top: 15px;
+        }
+
+        &__input{
+            padding: 7px 0;
+
+            p{
+                padding-bottom: 2px;
+                font-size: 20px;
+            }
+
+            select,
+            input{
+                width: 70%;
+                padding: 3px;
+                font-size: 16px;
+            }
+
+            .rowInput{
+                display: flex;
+                flex-direction: row;
+
+                input{
+                    width: 60%;
+                }
+
+                select{
+                    width: 40%;
+                }
+            }
+
+            .row{
+                display: flex;
+                flex-direction: row;
+
+                input{
+                    width: auto;
+                }
+            }
+
+            .pass{
+                background-color: red;
+            }
         }
     }
 }

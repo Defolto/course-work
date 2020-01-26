@@ -13,10 +13,7 @@
             <div class="row-nav__block" id="types">
                 <p class="row-nav__paragraph row-nav__paragraph_active" id="entrance">Вход</p>
                 <p class="row-nav__paragraph" id="exit">Выход</p>
-                <p class="row-nav__paragraph" id="text">Текст</p>
-                <p class="row-nav__paragraph" id="attention">Внимание</p>
-                <p class="row-nav__paragraph" id="background">Фон</p>
-                <p class="row-nav__paragraph" id="scale">Смещения</p>
+                <p class="row-nav__paragraph" id="attention">Внимание</p>                <p class="row-nav__paragraph" id="scale">Смещения</p>
                 <p class="row-nav__paragraph" id="grid">Сетка</p>
             </div>
             <div class="row-nav__block">
@@ -32,6 +29,80 @@
             </div>
         </div>
     </header>
+
+    <main>
+        <aside class="options">
+            <h5 class="options__title">Настройка</h5>
+            <div class="options__labels">
+                <div class="options__input">
+                    <p>Объект:</p>
+                    <select>
+                        <option>Текст</option>
+                        <option>2D объект</option>
+                        <option>Изображение</option>
+                        <option>Кнопка</option>
+                        <option>Блок div</option>
+                        <option>Фон</option>
+                    </select>
+                </div>
+                <div class="options__input">
+                    <p>Скорость</p>
+                    <div class="rowInput">
+                        <input type="number" placeholder="700">
+                        <select>
+                            <option>Секунды</option>
+                            <option>Милисекунды</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="options__input">
+                    <p>Функция произведения:</p>
+                    <div class="options__function">
+                        <select>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <span>Задать функцией Бизье</span> 
+                        <input type="checkbox" id="Beziers">
+                    </div>
+                </div>
+                <div class="options__input">
+                    <p>Задержка:</p>
+                    <div class="rowInput">
+                        <input type="number" placeholder="0">
+                        <select>
+                            <option>Секунды</option>
+                            <option>Милисекунды</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="options__input">
+                    <p>Кол-во повторений:</p>
+                    <input type="number" value="1" id="delay">
+                    <div class="row">
+                        <span>Бесконечно</span> 
+                        <input type="checkbox" id="infinity">
+                    </div>
+                </div>
+                <div class="options__input">
+                    <p>Направление:</p>
+                    <select>
+                        <option>normal</option>
+                        <option>reverse</option>
+                        <option>alternate</option>
+                        <option>alternate-reverse</option>
+                    </select>
+                </div>
+            </div>
+        </aside>
+    </main>
     <script src="js/nav.js"></script>
+    <script src="js/aside.js"></script>
 </body>
 </html>
