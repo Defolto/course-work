@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/createAnimation.css">
 </head>
 <body>
     <header>
@@ -48,23 +49,22 @@
                 <div class="options__input">
                     <p>Скорость</p>
                     <div class="rowInput">
-                        <input type="number" placeholder="700">
-                        <select>
-                            <option>Секунды</option>
-                            <option>Милисекунды</option>
+                        <input type="number" placeholder="1" id="speed">
+                        <select id="timeSpeed">
+                            <option value="s">Секунды</option>
+                            <option value="ms">Милисекунды</option>
                         </select>
                     </div>
                 </div>
                 <div class="options__input">
                     <p>Функция произведения:</p>
                     <div class="options__function">
-                        <select>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
+                        <select id="productFunction">
+                            <option value="linear" selected>linear</option>
+                            <option value="ease">ease</option>
+                            <option value="ease-in">ease-in</option>
+                            <option value="ease-out">ease-out</option>
+                            <option value="ease-in-out">ease-in-out</option>
                         </select>
                     </div>
                     <div class="row">
@@ -75,16 +75,16 @@
                 <div class="options__input">
                     <p>Задержка:</p>
                     <div class="rowInput">
-                        <input type="number" placeholder="0">
-                        <select>
-                            <option>Секунды</option>
-                            <option>Милисекунды</option>
+                        <input type="number" placeholder="0" id="delay">
+                        <select id="delaySpeed">
+                            <option value="s">Секунды</option>
+                            <option value="ms">Милисекунды</option>
                         </select>
                     </div>
                 </div>
                 <div class="options__input">
                     <p>Кол-во повторений:</p>
-                    <input type="number" value="1" id="delay">
+                    <input type="number" placeholder="1" id="count">
                     <div class="row">
                         <span>Бесконечно</span> 
                         <input type="checkbox" id="infinity">
@@ -92,17 +92,26 @@
                 </div>
                 <div class="options__input">
                     <p>Направление:</p>
-                    <select>
-                        <option>normal</option>
-                        <option>reverse</option>
-                        <option>alternate</option>
-                        <option>alternate-reverse</option>
+                    <select id="direction">
+                        <option value="normal">normal</option>
+                        <option value="reverse">reverse</option value="">
+                        <option value="alternate">alternate</option>
+                        <option value="alternate-reverse">alternate-reverse</option>
                     </select>
                 </div>
             </div>
         </aside>
+
+        <div id="reload">
+            <img src="img/reload.png" width="30px" height="30px" alt="перезапуск">
+        </div>
+
+        <div class="block-object">
+            <div class="block-object__object object_animation" id="object_animation"></div>
+        </div>
     </main>
     <script src="js/nav.js"></script>
     <script src="js/aside.js"></script>
+    <script src="js/createAnimation.js"></script>
 </body>
 </html>
