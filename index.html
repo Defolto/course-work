@@ -14,7 +14,8 @@
             <div class="row-nav__block" id="types">
                 <p class="row-nav__paragraph row-nav__paragraph_active" id="entrance">Вход</p>
                 <p class="row-nav__paragraph" id="exit">Выход</p>
-                <p class="row-nav__paragraph" id="attention">Внимание</p>                <p class="row-nav__paragraph" id="scale">Смещения</p>
+                <p class="row-nav__paragraph" id="attention">Внимание</p>                
+                <p class="row-nav__paragraph" id="scale">Смещения</p>
                 <p class="row-nav__paragraph" id="grid">Сетка</p>
             </div>
             <div class="row-nav__block">
@@ -23,10 +24,10 @@
         </nav>
         <div class="row-nav">
             <div class="row-nav__block" id="subtypes">
-                <p class="row-nav__paragraph">Прозрачность</p>
-                <p class="row-nav__paragraph">Приближение</p>
-                <p class="row-nav__paragraph">Поворот</p>
-                <p class="row-nav__paragraph">Слайд</p>
+                <p class="row-nav__paragraph row-nav__paragraph_active" id="opacityAnim">Прозрачность</p>
+                <p class="row-nav__paragraph" id="skewAnim">Приближение</p>
+                <p class="row-nav__paragraph" id="rotateAnim">Поворот</p>
+                <p class="row-nav__paragraph" id="slideAnim">Слайд</p>
             </div>
         </div>
     </header>
@@ -37,13 +38,12 @@
             <div class="options__labels">
                 <div class="options__input">
                     <p>Объект:</p>
-                    <select>
-                        <option>Текст</option>
-                        <option>2D объект</option>
-                        <option>Изображение</option>
-                        <option>Кнопка</option>
-                        <option>Блок div</option>
-                        <option>Фон</option>
+                    <select id="type-object">
+                        <option value="text">Текст</option>
+                        <option value="2d-object" selected>Блок div</option>
+                        <option value="img">Изображение</option>
+                        <option value="btn">Кнопка</option>
+                        <option value="bg">Фон</option>
                     </select>
                 </div>
                 <div class="options__input">
@@ -68,7 +68,7 @@
                         </select>
                     </div>
                     <div class="row">
-                        <span>Задать функцией Бизье</span> 
+                        <span>Задать функцией Бизье (не работает)</span> 
                         <input type="checkbox" id="Beziers">
                     </div>
                 </div>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="block-object">
-            <div class="block-object__object object_animation" id="object_animation"></div>
+            <div class="block-object__2d-object object_animation" id="object_animation"></div>
         </div>
     </main>
     <script src="js/nav.js"></script>

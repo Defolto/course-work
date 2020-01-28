@@ -1,5 +1,5 @@
 const xmlhttp = new XMLHttpRequest();
-const nav = document.getElementById('subtypes');
+let nav = document.getElementById('subtypes');
 let type;
 
 // Слушатель клика по типам
@@ -24,5 +24,9 @@ xmlhttp.onreadystatechange = function() {
 };
 
 // высота main от nav
-document.querySelector('main').style.height = (document.documentElement.clientHeight - document.querySelector('header').clientHeight) + 'px';
+function heightNav() {
+    document.querySelector('main').style.height = (document.documentElement.clientHeight - document.querySelector('header').clientHeight) + 'px';
+}
+
+heightNav();
 

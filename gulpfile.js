@@ -19,7 +19,6 @@ function lintCss(){
         }));
 }
 
-
 function watch(){
     browserSync.init({
         server:{

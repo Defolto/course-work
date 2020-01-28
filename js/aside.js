@@ -1,6 +1,6 @@
-const Beziers = document.getElementById('Beziers');
-const InfinityDelay = document.getElementById('infinity');
-const blockFunction = document.querySelector('.options__function')
+let Beziers = document.getElementById('Beziers');
+let InfinityDelay = document.getElementById('infinity');
+let blockFunction = document.querySelector('.options__function')
 
 // выбор задания функции
 function changeBeziers() {
