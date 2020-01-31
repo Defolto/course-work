@@ -1,0 +1,12 @@
+{
+    "animations": {
+
+        "opacityAnim": ["<br>@keyframes opacityAnim{<br>&emsp;0%{<br>&emsp;&emsp;opacity: 0;<br>&emsp;}<br><br>&emsp;100%{<br>&emsp;&emsp;opacity: 1;<br>&emsp;}<br>}"],
+
+        "skewAnim": ["<br>@keyframes skewAnim{<br>&emsp;0%{<br>&emsp;&emsp;transform: scale(.1);<br>&emsp;}<br><br>&emsp;100%{<br>&emsp;&emsp;transform: scale(1);<br>&emsp;}<br>}"],
+
+        "rotateAnim": ["<br>@keyframes rotateAnim{<br>&emsp;0%{<br>&emsp;&emsp;transform: rotateZ(360deg);<br>&emsp;}<br><br>&emsp;100%{<br>&emsp;&emsp;transform: scale(0deg);<br>&emsp;}<br>}"],
+
+        "slideAnim": ["<br>@keyframes slideAnim{<br>&emsp;0%{<br>&emsp;&emsp;opacity: 0;<br>&emsp;&emsp;transform: translateX(-1000px);<br>&emsp;}<br><br>&emsp;100%{<br>&emsp;&emsp;opacity: 1;<br>&emsp;&emsp;transform: translateX(0px);<br>&emsp;}<br>}"]
+    } 
+}
